@@ -1,0 +1,129 @@
+               REACT
+               ---------
+-FRONTEND TENCHONOLOGIES-to create UI(USER INTERFACE user and computer interation)
+`MAINTAINTED by FACEBOOK
+-reacr make use javascript library
+
+feature of react
+----------
+1-single page application(SPA)
+2-DECLERATIVE APPLICATION- it doesnot acess real DOM(Document object model  is created browser)
+3- virtual DOM
+   ------ it is copy of real DOM
+          -difing-compairing of real dom with virtual dom
+          reconcilation-updation od real dom
+4)-immutable variable-variable which doesnot change value
+5- pure function -function the ascept immutebale variable as argument and return an object -or in other words  results depends only on the argument.
+6)data sharing-  unidirection -parent to child
+7)-language -JSX-javascript XML (ITS COMBINATION OF HTML ,CSS,JAVASCRIPT)
+8)-transpiling - conversion of jsx into browser  understandingn langague
+-     babel -usey to  convert      
+
+
+                 how to create a project 
+                 ----------------
+command - npx create-react-app projectName                    
+            -npx -node package excute -to excute
+            -npm-node package manager-install
+ files
+ -----
+ 1)README-  Document which contains detao;s of the project eq:= build ,run
+ 2)package.json -hold the configration of npm -depedencies =installed library
+ 3)package-lock.json -holds the version and improt details og libraries
+ 4)node_module - copy of installed libraries
+ 5).gitignore - it hold file names which need to be excluded wil adding git
+ 6)public floder contains those file which available throught the application.
+      - index.html file - only file that render in the browser
+7) reportwebvital-used to mesaure the performance of the application
+8/ jsx-code should be placed inside a single tag
+  style
+  -----
+  1) external CSS 
+    create .css file
+    connect using improt keyword
+  2)inline css
+     style -{{property:value  }}
+  3)- css module 
+            -create a file with extension as .module.css
+            -only be placed inside of src floder
+            -global accessable
+            -can assign to a variable    
+
+      REACT fragment=  <></>
+component-it is basic unit
+  javascript can display using variable      const name ='condent'  name variable call {}.
+            two type of component in REACT
+            --------------
+           - component inside of src
+            -common component js or jsx
+            -name should start with capletter rename is not possible
+      1)functional component (rfce )
+      2)class  component   (rcc)
+
+ DATA sharing -pros -object
+     EVENT HANDLING
+     -------------
+     onclick=onClick  second letter will be a capletter
+
+     consition rendering
+     ----------------
+    1 single condition-truthy
+    2 more than condition=ternery
+
+
+    state
+    ------
+ calss    property =variable
+
+predefinde  object to store property of a class base component
+-if the value of the state changes the entire component re-enterd
+-setState- method use to change a value of state
+ 
+
+  life cycle of class component
+  ----------------------
+  1)mounting stage -component creation
+     -constructor()- initial of state
+     -getDriveStatefromprops()-
+          constructor()
+          super()
+          render()-it return jsx element (Dom)
+     -componentDidMount() -API
+     
+  2)updating stage-component update
+      -getDrivedStateFromprops()
+      -shouldComponentUpdate() - true or false
+      -getSnapShopBeforeUpdate()-
+      -componentDidUpdate()
+  3)unmounting stage-component deletion
+       -componentWillUnmount()
+       function component -hooks
+       -------------------
+
+
+  2 types hooks
+  ------
+  1)predefinde hooks
+       -definde by the react libraries
+       -useState,useEffect,useContext.......
+  2)custome    hooks 
+      -definde by the developer
+
+      rules
+      ======
+      1-improt hooks at the top of file 
+      2) call the hook at the top of function component
+      3)hooks cant be conditional
+
+
+      useState
+      ---------
+      -used to create state in functional component
+      synax
+      -----
+      const[statename ,functionToChangeState]= useState(initialValue)
+
+
+      rest operator is used  remain condent get
+
+      preventDefault-is used stop reload or lose  data
